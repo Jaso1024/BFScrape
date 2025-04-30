@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bfscrape"
+version = "0.1.0"
+description = "A concurrent, AI-driven breadth-first web scraper"
+readme = "README.md"
+authors = [
+    {name = "BFScrape Developers"}
+]
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+keywords = ["web scraping", "breadth-first search", "ai", "selenium", "beautifulsoup"]
+dependencies = [
+    "selenium",
+    "beautifulsoup4",
+    "pydantic",
+    "openai>=1.0.0"
+]
+requires-python = ">=3.8"
+
+# The StatefulModels dependency is handled separately since it's not on PyPI
+# Use the commented dependencies below when StatefulModels is published on PyPI
+# or install it locally before installing BFScrape
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/bfscrape"
+"Bug Tracker" = "https://github.com/yourusername/bfscrape/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "black",
+    "isort",
+    "mypy",
+    "ruff",
+]
+
+[project.scripts]
+bfscrape = "bfs_scrape.cli:main" 

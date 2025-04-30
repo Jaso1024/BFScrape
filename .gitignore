@@ -53,3 +53,4 @@ venv.bak/
 
 # Project specific
 scrape_results.json 
+technical_log.txt
