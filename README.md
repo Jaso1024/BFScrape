@@ -113,10 +113,6 @@ results = scraper.start_scraping()
 - Internet connection
 - OpenAI API key (or compatible alternative)
 
-## Documentation
-
-Full documentation is available at [https://bfscrape.readthedocs.io](https://bfscrape.readthedocs.io).
-
 ## License
 
 MIT
